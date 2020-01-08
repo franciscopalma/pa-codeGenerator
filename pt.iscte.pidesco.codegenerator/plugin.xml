@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="codeactions2" name="Code Actions" schema="schema/codeactions.exsd"/>
+   <extension
+         id="view"
+         name="View"
+         point="pt.iscte.pidesco.view">
+      <view
+            class="pt.iscte.pidesco.codegenerator.WindowsView">
+      </view>
+   </extension>
+   <extension
+         id="id1"
+         name="name"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="pt.iscte.pidesco.codegenerator.ClassTool"
+            description="add class"
+            hasState="false"
+            icon="class.gif"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+   <extension
+         id="id2"
+         name="name"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="pt.iscte.pidesco.codegenerator.PackageTool"
+            hasState="false"
+            icon="package.gif"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+
+</plugin>
